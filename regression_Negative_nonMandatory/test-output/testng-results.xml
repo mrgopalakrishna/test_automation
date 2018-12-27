@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="374915" started-at="2018-12-27T12:25:48Z" finished-at="2018-12-27T12:32:03Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="374915" started-at="2018-12-27T12:25:48Z" finished-at="2018-12-27T12:32:03Z">
+      <class name="testPack_voot.testvoot">
+        <test-method status="PASS" signature="run_Function()[pri:0, instance:testPack_voot.testvoot@553f17c]" name="run_Function" duration-ms="374870" started-at="2018-12-27T12:25:48Z" finished-at="2018-12-27T12:32:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run_Function -->
+      </class> <!-- testPack_voot.testvoot -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
