@@ -55,8 +55,6 @@ public class testvoot extends GenericFunction {
 		String path = web_path;
 		String platform = plat_web;
 				
-		Workbook wb1;
-
 		try {
 			// FileInputStream fis1 = new FileInputStream(path);
 			// Workbook wb1 = WorkbookFactory.create(fis1);
