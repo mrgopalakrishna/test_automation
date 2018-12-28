@@ -45,8 +45,8 @@ public class testvoot extends GenericFunction {
 
 		
 		//String web_path = "C:\\Users\\iFocus\\eclipse-workspace\\regression_Negative_nonMandatory\\Input_Files\\News_Web1_Test.xlsx";
-		
-		String web_path = "~\\Jenkins\\workspace\\test_automation\\regression_Negative_nonMandatory\\Input_Files\\News_Web1_Test.xlsx";
+		//C:\Program Files (x86)\Jenkins\workspace\test_automation\regression_Negative_nonMandatory\Input_Files\News_Web1_Test.xlsx
+		String web_path = "C:\\Program Files (x86)\\Jenkins\\workspace\\test_automation\\regression_Negative_nonMandatory\\Input_Files\\News_Web1_Test.xlsx";
 		String plat_web = "Web";
 
 		String pwa_path = "C:\\Users\\iFocus\\eclipse-workspace\\regression_Negative_nonMandatory\\Input_Files\\PWA_Negative.xlsx";
