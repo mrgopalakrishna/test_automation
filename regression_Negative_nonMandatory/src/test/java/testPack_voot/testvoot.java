@@ -40,7 +40,7 @@ public class testvoot extends GenericFunction {
 			InvalidFormatException, InterruptedException {
 		Logger logger = Logger.getLogger(testvoot.class);
         	BasicConfigurator.configure();
-        	logger.info("This is my first log4j's statement");
+        	
 
 		String android_path = "C:\\Users\\iFocus\\eclipse-workspace\\restAssuredFrameWork\\Input_Files\\PWA_Negative.xlsx";
 		String plat_android = "Android";
@@ -78,6 +78,7 @@ public class testvoot extends GenericFunction {
 			if (wb1!=null)
 			{
 				System.out.println("Inside if wb!=null");
+				logger.info("This is my first log4j's statement");
 				for (int i = 0; i < wb1.getNumberOfSheets(); i++) {
 					Sheetname.add(wb1.getSheetName(i));
 				}
