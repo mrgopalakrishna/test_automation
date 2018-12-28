@@ -45,6 +45,7 @@ public class testvoot extends GenericFunction {
 
 		
 		//String web_path = "C:\\Users\\iFocus\\eclipse-workspace\\regression_Negative_nonMandatory\\Input_Files\\News_Web1_Test.xlsx";
+		
 		String web_path = "~\\regression_Negative_nonMandatory\\Input_Files\\News_Web1_Test.xlsx"
 		String plat_web = "Web";
 
