@@ -100,7 +100,7 @@ public class GenericFunction {
 					ProdResponse1 = Prodresp1.prettyPrint().toString();
 
 					softAssert.assertEquals(UATResponse1, ProdResponse1);
-					softAssert.assertAll();
+					//softAssert.assertAll();
 
 					// writing the status of json comparison and response of both UAT and PROD
 					// FileInputStream fis1 = new FileInputStream(path);
