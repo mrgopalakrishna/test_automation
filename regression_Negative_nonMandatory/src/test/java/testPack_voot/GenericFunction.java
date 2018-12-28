@@ -47,11 +47,11 @@ public class GenericFunction {
 			InvalidFormatException, IOException, InterruptedException, FileNotFoundException {
 		RestAssured.config = RestAssured.config().encoderConfig(
 				EncoderConfig.encoderConfig().appendDefaultContentCharsetToContentTypeIfUndefined(false));
-		// FileInputStream fis = new FileInputStream(path);
-		// Workbook wb = WorkbookFactory.create(fis);
+		FileInputStream fis = new FileInputStream(path);
+		Workbook wb = WorkbookFactory.create(fis);
 
-		Workbook wb = GenericFunction.commonwb;
-		Sheet sh = wb.getSheet(sheetname);
+		//Workbook wb = GenericFunction.commonwb;
+		//Sheet sh = wb.getSheet(sheetname);
 
 		// counting the no. of rows from sheet
 		// int rowCount = sh.getLastRowNum()-sh.getFirstRowNum();
@@ -106,7 +106,12 @@ public class GenericFunction {
 					// FileInputStream fis1 = new FileInputStream(path);
 					// Workbook wb1 = WorkbookFactory.create(fis1);
 
-					Workbook wb1 = GenericFunction.commonwb;
+					//Workbook wb1 = GenericFunction.commonwb;
+					
+					FileInputStream fis1;
+					fis1 = new FileInputStream(path);
+
+					Workbook wb1 = WorkbookFactory.create(fis1);
 
 					Sheet sh1 = wb1.getSheet(sheetname);
 
