@@ -72,9 +72,9 @@ public class testvoot extends GenericFunction {
 				e.printStackTrace();
 				
 			}
-			if (totalSheetcount!=0)
+			if (wb1.getNumberOfSheets()!=0)
 			{
-				for (int i = 0; i < totalSheetcount; i++) {
+				for (int i = 0; i < wb1.getNumberOfSheets(); i++) {
 					Sheetname.add(wb1.getSheetName(i));
 				}
 				ArrayList<String> All_Sheetnames = Sheetname;
