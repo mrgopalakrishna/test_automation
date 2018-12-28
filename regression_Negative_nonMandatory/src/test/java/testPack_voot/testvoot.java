@@ -75,10 +75,9 @@ public class testvoot extends GenericFunction {
 			// for each sheet in the workbook
 			int totalSheetcount=wb1.getNumberOfSheets();
 			
-			if (wb1!=null)
-			{
+			
 				System.out.println("Inside if wb!=null");
-				logger.info("This is my first log4j's statement");
+				//logger.info("This is my first log4j's statement");
 				for (int i = 0; i < wb1.getNumberOfSheets(); i++) {
 					Sheetname.add(wb1.getSheetName(i));
 				}
@@ -89,12 +88,7 @@ public class testvoot extends GenericFunction {
 					GenericFunction.compare(EachSheetname, path, platform);
 				}
 				Sheetname.clear();
-			}
-			else
-			{
-				System.out.println("Sheet is Empty or Problem Accessing Sheet ie before getting Sheet number ie wb1 is null");
-			}
-							
+										
 
 		} catch (IOException e) {
 			e.printStackTrace();
