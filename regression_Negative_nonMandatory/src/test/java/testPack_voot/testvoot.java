@@ -30,12 +30,17 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
 
 public class testvoot extends GenericFunction {
 
 	@Test
 	public static void run_Function() throws FileNotFoundException, LeftoverDataException, EncryptedDocumentException,
 			InvalidFormatException, InterruptedException {
+		Logger logger = Logger.getLogger(testvoot.class);
+        	BasicConfigurator.configure();
+        	logger.info("This is my first log4j's statement");
 
 		String android_path = "C:\\Users\\iFocus\\eclipse-workspace\\restAssuredFrameWork\\Input_Files\\PWA_Negative.xlsx";
 		String plat_android = "Android";
