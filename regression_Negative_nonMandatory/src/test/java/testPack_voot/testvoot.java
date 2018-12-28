@@ -61,15 +61,23 @@ public class testvoot extends GenericFunction {
 			ArrayList<String> Sheetname = new ArrayList<String>();
 
 			// for each sheet in the workbook
-			for (int i = 0; i < wb1.getNumberOfSheets(); i++) {
-				Sheetname.add(wb1.getSheetName(i));
-			}
-			ArrayList<String> All_Sheetnames = Sheetname;
+			int totalSheetcount=wb1.getNumberOfSheets();
+			if (totalSheetcount!=0)
+			{
+				for (int i = 0; i < totalSheetcount; i++) {
+					Sheetname.add(wb1.getSheetName(i));
+				}
+				ArrayList<String> All_Sheetnames = Sheetname;
 
-			for (String EachSheetname : All_Sheetnames) {
-				GenericFunction.compare(EachSheetname, path, platform);
+				for (String EachSheetname : All_Sheetnames) {
+					GenericFunction.compare(EachSheetname, path, platform);
+				}
+				Sheetname.clear();
 			}
-			Sheetname.clear();
+			else
+			{
+				System.out.println("Sheet is Empty or Problem Accessing Sheet");
+			}
 
 		} catch (IOException e) {
 			e.printStackTrace();
