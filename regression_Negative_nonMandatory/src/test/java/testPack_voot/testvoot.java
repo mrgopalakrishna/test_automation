@@ -55,6 +55,8 @@ public class testvoot extends GenericFunction {
 		
 		String web_path ="D:\\jenkins\\News_Web1_Test.xlsx";
 		String plat_web = "Web";
+		
+				System.out.println("Printing...");
 
 		String pwa_path = "C:\\Users\\iFocus\\eclipse-workspace\\regression_Negative_nonMandatory\\Input_Files\\PWA_Negative.xlsx";
 		String platform_pwa = "Pwa";
