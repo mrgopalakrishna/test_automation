@@ -189,6 +189,11 @@ public class GenericFunction {
 			return null;
 
 		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+			return null;
+		}
 
 	}
 }
