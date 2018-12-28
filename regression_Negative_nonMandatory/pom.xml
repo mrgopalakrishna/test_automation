@@ -20,9 +20,7 @@
     <groupId>log4j</groupId>
     <artifactId>log4j</artifactId>
     <version>1.2.15</version>
-</dependency>
-	  
-<exclusions>
+    <exclusions>
 	<exclusion>
 		<groupId>com.sun.jmx</groupId>
 		<artifactId>jmxri</artifactId>
@@ -36,7 +34,8 @@
 		<artifactId>jms</artifactId>
 	</exclusion>
 </exclusions>
-
+</dependency>
+	 
 <dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi</artifactId>
