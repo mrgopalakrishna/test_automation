@@ -83,6 +83,7 @@ public class testvoot extends GenericFunction {
 				ArrayList<String> All_Sheetnames = Sheetname;
 
 				for (String EachSheetname : All_Sheetnames) {
+					System.out.println("Function Call");
 					GenericFunction.compare(EachSheetname, path, platform);
 				}
 				Sheetname.clear();
