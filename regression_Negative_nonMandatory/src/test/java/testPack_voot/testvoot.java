@@ -64,15 +64,9 @@ public class testvoot extends GenericFunction {
 			ArrayList<String> Sheetname = new ArrayList<String>();
 
 			// for each sheet in the workbook
-			try
-			{
-				int totalSheetcount=wb1.getNumberOfSheets();
-			}
-			catch (Exception e) {
-				e.printStackTrace();
-				
-			}
-			if (wb1.getNumberOfSheets()!=0)
+			int totalSheetcount=wb1.getNumberOfSheets();
+			
+			if (wb1!=null)
 			{
 				for (int i = 0; i < wb1.getNumberOfSheets(); i++) {
 					Sheetname.add(wb1.getSheetName(i));
@@ -86,7 +80,7 @@ public class testvoot extends GenericFunction {
 			}
 			else
 			{
-				System.out.println("Sheet is Empty or Problem Accessing Sheet ie before getting Sheet number");
+				System.out.println("Sheet is Empty or Problem Accessing Sheet ie before getting Sheet number ie wb1 is null");
 			}
 							
 
