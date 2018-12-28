@@ -51,7 +51,7 @@ public class GenericFunction {
 		Workbook wb = WorkbookFactory.create(fis);
 
 		//Workbook wb = GenericFunction.commonwb;
-		//Sheet sh = wb.getSheet(sheetname);
+		Sheet sh = wb.getSheet(sheetname);
 
 		// counting the no. of rows from sheet
 		// int rowCount = sh.getLastRowNum()-sh.getFirstRowNum();
