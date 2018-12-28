@@ -58,7 +58,15 @@ public class testvoot extends GenericFunction {
 		try {
 			// FileInputStream fis1 = new FileInputStream(path);
 			// Workbook wb1 = WorkbookFactory.create(fis1);
+			try
+			{
 			Workbook wb1 = GenericFunction.readFile(path);
+			}
+			catch (IOException e) {
+			e.printStackTrace();
+			System.out.println("Sheet is Empty or Problem Accessing Sheet");
+		}
+				
 
 			ArrayList<String> Sheetname = new ArrayList<String>();
 
