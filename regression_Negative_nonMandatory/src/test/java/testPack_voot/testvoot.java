@@ -60,7 +60,11 @@ public class testvoot extends GenericFunction {
 		try {
 			// FileInputStream fis1 = new FileInputStream(path);
 			// Workbook wb1 = WorkbookFactory.create(fis1);
-			wb1 = GenericFunction.readFile(path);
+			FileInputStream fis1;
+			fis1 = new FileInputStream(path);
+
+			Workbook wb1 = WorkbookFactory.create(fis1);
+			//wb1 = GenericFunction.readFile(path);
 			ArrayList<String> Sheetname = new ArrayList<String>();
 
 			// for each sheet in the workbook
