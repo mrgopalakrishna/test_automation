@@ -77,6 +77,7 @@ public class testvoot extends GenericFunction {
 			
 			if (wb1!=null)
 			{
+				System.out.println("Inside if wb!=null");
 				for (int i = 0; i < wb1.getNumberOfSheets(); i++) {
 					Sheetname.add(wb1.getSheetName(i));
 				}
