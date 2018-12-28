@@ -61,6 +61,8 @@ public class testvoot extends GenericFunction {
 			ArrayList<String> Sheetname = new ArrayList<String>();
 
 			// for each sheet in the workbook
+			try
+			{
 			int totalSheetcount=wb1.getNumberOfSheets();
 			if (totalSheetcount!=0)
 			{
@@ -78,6 +80,11 @@ public class testvoot extends GenericFunction {
 			{
 				System.out.println("Sheet is Empty or Problem Accessing Sheet");
 			}
+			}
+			catch (Exception e) {
+			e.printStackTrace();
+		}
+					
 
 		} catch (IOException e) {
 			e.printStackTrace();
