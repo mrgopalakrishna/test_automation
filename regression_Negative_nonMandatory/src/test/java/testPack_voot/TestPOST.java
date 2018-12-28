@@ -37,7 +37,7 @@ import java.util.Map;
 
 import javax.mail.Message;
 
-@Test
+//@Test
 public class TestPOST {
 	static Response UATResp;
 	static Response ProdResp;
