@@ -60,24 +60,18 @@ public class testvoot extends GenericFunction {
 		try {
 			// FileInputStream fis1 = new FileInputStream(path);
 			// Workbook wb1 = WorkbookFactory.create(fis1);
-			
-			
-			try
-			{
 			wb1 = GenericFunction.readFile(path);
-			}
-			catch (IOException e) {
-			e.printStackTrace();
-			System.out.println("Sheet is Empty or Problem Accessing Sheet");
-		}
-				
-
 			ArrayList<String> Sheetname = new ArrayList<String>();
 
 			// for each sheet in the workbook
 			try
 			{
-			int totalSheetcount=wb1.getNumberOfSheets();
+				int totalSheetcount=wb1.getNumberOfSheets();
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+				
+			}
 			if (totalSheetcount!=0)
 			{
 				for (int i = 0; i < totalSheetcount; i++) {
@@ -94,11 +88,7 @@ public class testvoot extends GenericFunction {
 			{
 				System.out.println("Sheet is Empty or Problem Accessing Sheet");
 			}
-			}
-			catch (Exception e) {
-			e.printStackTrace();
-		}
-					
+							
 
 		} catch (IOException e) {
 			e.printStackTrace();
