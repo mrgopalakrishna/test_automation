@@ -72,7 +72,7 @@ public class testvoot extends GenericFunction {
 				e.printStackTrace();
 				
 			}
-			if (wb1.getNumberOfSheets()!=null)
+			if (wb1.getNumberOfSheets()!=0)
 			{
 				for (int i = 0; i < wb1.getNumberOfSheets(); i++) {
 					Sheetname.add(wb1.getSheetName(i));
@@ -95,7 +95,7 @@ public class testvoot extends GenericFunction {
 		}
 		  catch (NullPointerException e) {
 			e.printStackTrace();
-			  System.out.println("Sheet is Empty or Problem Accessing Sheet");
+			  System.out.println("Sheet is Empty or Problem Accessing Sheet_outer error");
 		}
 
 	}
