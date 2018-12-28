@@ -82,6 +82,10 @@ public class testvoot extends GenericFunction {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		  catch (NullPointerException e) {
+			e.printStackTrace();
+			  System.out.println("Sheet is Empty or Problem Accessing Sheet");
+		}
 
 	}
 
